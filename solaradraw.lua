@@ -508,5 +508,5 @@ function DrawingLib.new(drawingType)
 end
 
 setreadonly(DrawingLib, true)
-getgenv().Drawing = DrawingLib
+table.freeze(DrawingLib)
 return DrawingLib
