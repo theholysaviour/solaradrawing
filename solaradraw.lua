@@ -507,6 +507,6 @@ function DrawingLib.new(drawingType)
 	end
 end
 
-setreadonly(DrawingLib, true)
 table.freeze(DrawingLib)
+getgenv().Drawing = DrawingLib
 return DrawingLib
